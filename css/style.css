@@ -17,9 +17,3 @@ body {
     font-size: 3.5rem;
   }
 }
-
-#navbar {
-  position: inherit;
-  right: 0;
-  padding: inherit;
-}
