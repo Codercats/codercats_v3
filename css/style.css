@@ -19,7 +19,7 @@ body {
 }
 
 #navbar {
-  position: inherit;
+  position: fixed;
   right: 0;
   padding: inherit;
 }
