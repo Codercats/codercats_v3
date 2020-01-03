@@ -4319,6 +4319,12 @@ input[type="button"].btn-block {
     display: flex !important;
     -ms-flex-preferred-size: auto;
     flex-basis: auto;
+    /*custom css start*/
+    position: inherit;
+    right: 0;
+    padding: inherit;
+    /*custom css start*/
+
   }
   .navbar-expand-md .navbar-toggler {
     display: none;

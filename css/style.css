@@ -12,14 +12,20 @@ body {
   user-select: none;
 }
 
-@media (min-width: 768px) {
+@media (max-width: 768px) {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
   }
+  #navbar {
+    position: unset !important;
+  }
+  .mr-auto, .mx-auto {
+    float: right;
 }
 
-#navbar {
-  position: inherit;
-  right: 0;
-  padding: inherit;
-}
+
+  #navbar {
+    position: inherit;
+    right: 0;
+    padding: inherit;
+  }
