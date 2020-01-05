@@ -16,6 +16,7 @@ body {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
   }
+
   #navbar {
     position: unset !important;
   }
@@ -29,3 +30,7 @@ body {
     right: 0;
     padding: inherit;
   }
+
+h3.display-3 {
+  font-size: 3rem;
+}
