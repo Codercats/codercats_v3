@@ -24,13 +24,14 @@ body {
     float: right;
 }
 
-
   #navbar {
     position: inherit;
     right: 0;
     padding: inherit;
   }
 
-h3.display-3 {
-  font-size: 3rem;
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
