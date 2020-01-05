@@ -30,6 +30,12 @@ body {
     padding: inherit;
   }
 
-element.style {
+h1, h2 {
+  text-align: center;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
   margin: auto;
 }
