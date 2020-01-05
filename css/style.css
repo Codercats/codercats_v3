@@ -39,3 +39,10 @@ img {
   border-style: none;
   margin: auto;
 }
+
+section.anchor {
+  display: block;
+  position: relative;
+  top: -250px;
+  visibility: hidden;
+}
