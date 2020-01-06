@@ -257,10 +257,10 @@
 </div>
 
 
+<a class="btn btn-primary" onclick="document.getElementById('contact-form').submit();">Send</a>
+<a class="btn btn-primary" onclick="validateForm()">Send</a>
 
-
-
-
+<!-- Contact form -->
 
 
 
@@ -279,6 +279,7 @@
   <p> 71-75 Shelton Street, Covent Garden, London, WC2H 9JQ </p>
   <p>mail@codercats.io</p>
 </footer>
+<!-- footer -->
 
 <script src="js/tether.min.js"></script>
 <script src="js/scripts.js"></script>
@@ -286,6 +287,73 @@
     <script src="js/bootstrap.min.js"></script>
     <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
     <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+
+
+<!-- for contact form https://mdbootstrap.com/docs/jquery/forms/contact/ -->
+<script>
+function validateForm() {
+var name =  document.getElementById('name').value;
+if (name == "") {
+    document.getElementById('status').innerHTML = "Name cannot be empty";
+    return false;
+}
+var email =  document.getElementById('email').value;
+if (email == "") {
+    document.getElementById('status').innerHTML = "Email cannot be empty";
+    return false;
+} else {
+    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if(!re.test(email)){
+        document.getElementById('status').innerHTML = "Email format invalid";
+        return false;
+    }
+}
+var subject =  document.getElementById('subject').value;
+if (subject == "") {
+    document.getElementById('status').innerHTML = "Subject cannot be empty";
+    return false;
+}
+var message =  document.getElementById('message').value;
+if (message == "") {
+    document.getElementById('status').innerHTML = "Message cannot be empty";
+    return false;
+}
+document.getElementById('status').innerHTML = "Sending...";
+document.getElementById('contact-form').submit();
+
+}
+</script>
+
+<script>
+document.getElementById('status').innerHTML = "Sending...";
+formData = {
+'name'     : $('input[name=name]').val(),
+'email'    : $('input[name=email]').val(),
+'subject'  : $('input[name=subject]').val(),
+'message'  : $('textarea[name=message]').val()
+};
+
+
+$.ajax({
+url : "mail.php",
+type: "POST",
+data : formData,
+success: function(data, textStatus, jqXHR)
+{
+
+$('#status').text(data.message);
+if (data.code) //If mail was sent successfully, reset the form.
+$('#contact-form').closest('form').find("input[type=text], textarea").val("");
+},
+error: function (jqXHR, textStatus, errorThrown)
+{
+$('#status').text(jqXHR);
+}
+});
+</script>
+
+<!-- for contact form -->
 
 </body>
 </html>
