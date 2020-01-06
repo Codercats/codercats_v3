@@ -1,125 +1,107 @@
-<!Doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Codercats</title>
+<head>
 
-    <meta name="description" content="Codercats">
-    <meta name="author" content="Marc Bonne & Iana Gein">
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
 
-    <link href="css/bootstrap.css" rel="stylesheet">
-    <link href="css/bootstrap.min.css" rel="stylesheet">
-<!-- Custom styles for this template -->
-    <link href="css/style.css" rel="stylesheet">
+  <title>SB Admin 2 - Login</title>
 
-<!-- Icon for new logo -->
-  <link rel="icon" href="images/logo.png" type="image/gif" sizes="16x16">
+  <!-- Custom fonts for this template-->
+  <link href="vendor/fontawesome-free/css/all.min.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
 
-  </head>
+  <!-- Custom styles for this template-->
+  <link href="css/sb-admin-2.min.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
 
-  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+</head>
 
 <!-- Navigation -->
-    <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
+<nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
 
-      <a class="navbar-brand" href="index.html">
-          <img src="images/logo.png" width="35" height="35" alt="">
-        </a>
-      <a class="navbar-brand" href="index.html">Codercats</a>
-
-<!--
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-
-  <div class="collapse navbar-collapse" id="navbar">
-
-    <ul class="navbar-nav mr-auto">
-      <li class="nav-item mx-0 mx-lg-1">
-        <a class="nav-link js-scroll-trigger" href="#features">Features</a>
-      </li>
-      <li class="nav-item mx-0 mx-lg-1">
-        <a class="nav-link js-scroll-trigger" href="#users">Users</a>
-      </li>
-      <li class="nav-item mx-0 mx-lg-1">
-        <a class="nav-link js-scroll-trigger" href="#tryit">Try it now</a>
-      </li>
-      <li class="nav-item mx-0 mx-lg-1">
-        <a class="nav-link js-scroll-trigger" href="#contact">Get in touch</a>
-      </li>
-      <li class="nav-item mx-0 mx-lg-1">
-        <a class="nav-link js-scroll-trigger" href="{{ url('/login') }}">Log in</a>
-      </li>
-
-    </ul>
-    </div>
-    -->
-
+  <a class="navbar-brand" href="index.html">
+      <img src="images/logo.png" width="35" height="35" alt="">
+    </a>
+  <a class="navbar-brand" href="index.html">Codercats</a>
 </nav>
 <!-- Navigation -->
 
+<body class="bg-gradient-primary">
 
+  <div class="container" style="margin-top:20px">
 
+    <!-- Outer Row -->
+    <div class="row justify-content-center">
 
-<div class="container-fluid">
-  <div class="row no-gutter">
-    <div class="d-none d-md-flex col-md-4 col-lg-6 bg-image"></div>
-    <div class="col-md-8 col-lg-6">
-      <div class="login d-flex align-items-center py-5">
-        <div class="container">
-          <div class="row">
-            <div class="col-md-9 col-lg-8 mx-auto">
-              <h3 class="login-heading mb-4">Welcome back!</h3>
-              <form>
-                <div class="form-label-group">
-                  <input type="email" id="inputEmail" class="form-control" placeholder="Email address" required autofocus>
-                  <label for="inputEmail">Email address</label>
+      <div class="col-xl-10 col-lg-12 col-md-9">
+
+        <div class="card o-hidden border-0 shadow-lg my-5">
+          <div class="card-body p-0">
+            <!-- Nested Row within Card Body -->
+            <div class="row">
+              <div class="col-lg-6 d-none d-lg-block bg-login-image"></div>
+              <div class="col-lg-6">
+                <div class="p-5">
+                  <div class="text-center">
+                    <h1 class="h4 text-gray-900 mb-4">Welcome Back!</h1>
+                  </div>
+                  <form class="user">
+                    <div class="form-group">
+                      <input type="email" class="form-control form-control-user" id="exampleInputEmail" aria-describedby="emailHelp" placeholder="Enter Email Address...">
+                    </div>
+                    <div class="form-group">
+                      <input type="password" class="form-control form-control-user" id="exampleInputPassword" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                      <div class="custom-control custom-checkbox small">
+                        <input type="checkbox" class="custom-control-input" id="customCheck">
+                        <label class="custom-control-label" for="customCheck">Remember Me</label>
+                      </div>
+                    </div>
+                    <a href="index.html" class="btn btn-primary btn-user btn-block">
+                      Login
+                    </a>
+                    <hr>
+                    <a href="index.html" class="btn btn-google btn-user btn-block">
+                      <i class="fab fa-google fa-fw"></i> Login with Google
+                    </a>
+                    <a href="index.html" class="btn btn-facebook btn-user btn-block">
+                      <i class="fab fa-facebook-f fa-fw"></i> Login with Facebook
+                    </a>
+                  </form>
+                  <hr>
+                  <div class="text-center">
+                    <a class="small" href="forgot-password.html">Forgot Password?</a>
+                  </div>
+                  <div class="text-center">
+                    <a class="small" href="register.html">Create an Account!</a>
+                  </div>
                 </div>
-
-                <div class="form-label-group">
-                  <input type="password" id="inputPassword" class="form-control" placeholder="Password" required>
-                  <label for="inputPassword">Password</label>
-                </div>
-
-                <div class="custom-control custom-checkbox mb-3">
-                  <input type="checkbox" class="custom-control-input" id="customCheck1">
-                  <label class="custom-control-label" for="customCheck1">Remember password</label>
-                </div>
-                <button class="btn btn-lg btn-primary btn-block btn-login text-uppercase font-weight-bold mb-2" type="submit">Sign in</button>
-                <div class="text-center">
-                  <a class="small" href="#">Forgot password?</a></div>
-              </form>
+              </div>
             </div>
           </div>
         </div>
+
       </div>
+
     </div>
+
   </div>
-</div>
 
+  <!-- Bootstrap core JavaScript-->
+  <script src="vendor/jquery/jquery.min.js"></script>
+  <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
 
+  <!-- Core plugin JavaScript-->
+  <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
-
-
-  <!-- footer -->
-
-  <footer class="container-fluid text-center">
-    <p>&copy; Codercats 2020</p>
-    <p> 71-75 Shelton Street, Covent Garden, London, WC2H 9JQ </p>
-    <p>mail@codercats.io</p>
-  </footer>
-  <!-- footer -->
-
-  <script src="js/tether.min.js"></script>
-  <script src="js/scripts.js"></script>
-      <script src="js/jquery.min.js"></script>
-      <script src="js/bootstrap.min.js"></script>
-      <script src="https://code.jquery.com/jquery-2.1.3.min.js"></script>
-      <script src="http://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
-      <script src="js/bootstrap.bundle.min.js"></script>
+  <!-- Custom scripts for all pages-->
+  <script src="js/sb-admin-2.min.js"></script>
 
 </body>
 
