@@ -43,15 +43,18 @@ img {
 section.anchor {
   display: block;
   position: relative;
-  top: -250px;
-  visibility: hidden;
+
 }
 
 
-/* LOGIN */
+/* hero section */
 
-.bg-login-image {
-  background-image: src("images/login.jpg");
+@media (max-width: 768px) {
+section.anchor {
+    display: block;
+    position: relative;
+    top: 0px;
+    }
 }
 
-/* LOGIN END */
+/* hero section END */
