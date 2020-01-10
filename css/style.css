@@ -3,6 +3,7 @@ body {
   padding-top: 3.5rem;
 }
 
+
 .bd-placeholder-img {
   font-size: 1.125rem;
   text-anchor: middle;
@@ -12,10 +13,24 @@ body {
   user-select: none;
 }
 
+.jumbotron {
+  background-image: url(../images/hero.jpg);
+  background-size: 100%;
+  background-size: cover;
+}
+
 @media (max-width: 768px) {
   .bd-placeholder-img-lg {
     font-size: 3.5rem;
   }
+
+.jumbotron {
+  background-image: none;
+}
+
+.row {
+  display: block;
+}
 
   #navbar {
     position: unset !important;
@@ -43,18 +58,11 @@ img {
 section.anchor {
   display: block;
   position: relative;
-
 }
+}
+
 
 
 /* hero section */
-
-@media (max-width: 768px) {
-section.anchor {
-    display: block;
-    position: relative;
-    top: 0px;
-    }
-}
 
 /* hero section END */
