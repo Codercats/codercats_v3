@@ -41,7 +41,7 @@
 
       <!-- Nav Item - Project -->
 
-      <li class="nav-item active">
+      <li class="nav-item ">
         <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#Projects" aria-expanded="true" aria-controls="collapseTwo">
           <i class="fas fa-dice-d20"></i>
           <span>Project</span>
@@ -94,7 +94,7 @@
       </div>
 
       <!-- Nav Item - Charts -->
-      <li class="nav-item">
+      <li class="nav-item active">
         <a class="nav-link" href="coding.html">
           <i class="fas fa-code"></i>
           <span>Coding</span></a>
@@ -321,110 +321,72 @@
           </ul>
 
         </nav>
-        <!-- End of Topbar -->
+
 
         <!-- Begin Page Content -->
         <div class="container-fluid">
 
           <!-- Page Heading -->
-          <div class="d-sm-flex align-items-center justify-content-between mb-4">
-            <h1 class="h3 mb-0 text-gray-800">Welcome to Codercats</h1>
-          </div>
+          <h1 class="h3 mb-2 text-gray-800">Study and code your documents</h1>
 
           <!-- Content Row -->
           <div class="row">
 
-            <!-- Earnings (Monthly) Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-primary shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">Create a project</div>
 
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-dice-d20 fa-2x text-gray-300"></i>
-                    </div>
+
+            <!-- Donut Chart -->
+            <div class="col-xl-4 col-lg-5">
+              <div class="card shadow mb-4">
+                <!-- Card Header - Dropdown -->
+                <a href="#collapseCardExample" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample">
+                  <h6 class="m-0 font-weight-bold text-primary">Document list</h6>
+                </a>
+                <!-- Card Content - Collapse -->
+                <div class="collapse show" id="collapseCardExample">
+                  <div class="card-body">
+                    Pick a document from your document list
                   </div>
-                </div>
               </div>
             </div>
 
-            <!-- Earnings (Monthly) Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-success shadow h-100 py-2">
+            <div class="card shadow mb-4">
+              <!-- Card Header - Dropdown -->
+              <a href="#collapseCardExample" class="d-block card-header py-3" data-toggle="collapse" role="button" aria-expanded="true" aria-controls="collapseCardExample">
+                <h6 class="m-0 font-weight-bold text-primary">Code list</h6>
+              </a>
+              <!-- Card Content - Collapse -->
+              <div class="collapse show" id="collapseCardExample">
                 <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-success text-uppercase mb-1">Upload your data</div>
-
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-database fa-2x text-gray-300"></i>
-                    </div>
-                  </div>
+                  Check your codes in this table
                 </div>
-              </div>
-            </div>
-
-            <!-- Earnings (Monthly) Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-info shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-info text-uppercase mb-1">Code it</div>
-
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-code fa-2x text-gray-300"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <!-- Pending Requests Card Example -->
-            <div class="col-xl-3 col-md-6 mb-4">
-              <div class="card border-left-warning shadow h-100 py-2">
-                <div class="card-body">
-                  <div class="row no-gutters align-items-center">
-                    <div class="col mr-2">
-                      <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">Apply analytics</div>
-
-                    </div>
-                    <div class="col-auto">
-                      <i class="fas fa-chart-line fa-2x text-gray-300"></i>
-                    </div>
-                  </div>
-                </div>
-              </div>
             </div>
           </div>
+</div>
 
 
-
-
-          <!-- Content Row -->
-          <div class="row justify-content-md-center">
-
-            <!-- Content Column -->
-            <div class="col-lg-6 mb-4">
-
-              <!-- Illustrations -->
+            <div class="col-xl-8 col-lg-7">
+              <!-- Document area -->
               <div class="card shadow mb-4">
                 <div class="card-header py-3">
-                  <h6 class="m-0 font-weight-bold text-primary">Let's work on your project!</h6>
+
+                  <h6 class="m-0 font-weight-bold text-primary">Your document (PDFTron)</h6>
                 </div>
                 <div class="card-body">
-                  <div class="text-center">
-                    <img class="img-fluid px-3 px-sm-4 mt-3 mb-4" style="width: 25rem;" src="images/undraw_dev_focus_b9xo.svg" alt="">
+                  <div class="chart-area">
+                    <canvas id="myAreaChart"></canvas>
                   </div>
+                  <hr>
+
                 </div>
               </div>
 
+
+
+
             </div>
+
+
+
           </div>
 
         </div>
@@ -437,7 +399,7 @@
       <footer class="sticky-footer bg-white">
         <div class="container my-auto">
           <div class="copyright text-center my-auto">
-            <span>Copyright &copy; Codercats 2020</span>
+            <span>Copyright &copy; Your Website 2019</span>
           </div>
         </div>
       </footer>
@@ -489,6 +451,7 @@
   <!-- Page level custom scripts -->
   <script src="js/demo/chart-area-demo.js"></script>
   <script src="js/demo/chart-pie-demo.js"></script>
+  <script src="js/demo/chart-bar-demo.js"></script>
 
 </body>
 
