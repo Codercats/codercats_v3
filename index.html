@@ -28,7 +28,7 @@
       <a class="navbar-brand" href="index.html">
           <img src="images/logo.png" width="35" height="35" alt="">
         </a>
-      <a class="navbar-brand" href="#hero">Codercats</a>
+      <a class="navbar-brand" href="index.html">Codercats</a>
 
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
@@ -49,10 +49,12 @@
       <li class="nav-item mx-0 mx-lg-1">
         <a class="nav-link js-scroll-trigger" href="#contact">Get in touch</a>
       </li>
+
+      <!-- 
       <li class="nav-item mx-0 mx-lg-1">
         <a class="nav-link js-scroll-trigger" href="login.html" target="_blank">Log in</a>
       </li>
-
+      -->
     </ul>
   </div>
 </nav>
@@ -72,7 +74,7 @@
           <div class="col-sm">
       <h1 class="display-3" style="font-size: 2.5rem;">Text mining and research</h1>
       <p>We designed Codercats to assist you with document analysis. <br> You'll find it most helpful if you have large data sets and want to try out advanced analytics.</p>
-      <p><a class="btn btn-warning btn-lg" href="login.html" role="button">Try it now &raquo;</a></p>
+      <p><a class="btn btn-warning btn-lg" href="#tryit" role="button">Try it now &raquo;</a></p>
     </div>
       </div>
   </div>
@@ -110,7 +112,7 @@
       </div>
       <div class="col-md-4">
         <h2>Usability</h2>
-        <p>We utilised our UX knowledge and experience with other analysis tools to design an intuitive interface. We hope that Codercats will help you with your investigations and support your career. </p>
+        <p>We utilised our UX/UI knowledge and experience with other analysis tools to design an intuitive interface. We hope that Codercats will help you with your investigations and support your career. </p>
       </div>
     </div>
 
@@ -131,10 +133,11 @@
 <!-- Try it section -->
 <section id="tryit">
   <div class="container-fluid text-center" style="background-color:#e9ecef; padding-bottom: 20px;">
-<h1 style="color:#ef5d45; padding-top:60px;">Take a look at the trial version</h1>
-<p>The trial version is limited to 2 documents that are not larger than 1 MB.<br>Your trial account will expire in three days.</p>
-<p><a class="btn btn-warning btn-lg" href="login.html" role="button">Try it now &raquo;</a></p>
-  </div>
+<h1 style="color:#ef5d45; padding-top:60px;">Take a look at the prototype</h1>
+
+<iframe style="border: none;" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FyR6XhViCnjnVX6ZlJuhD6E%2FDashboard%3Fnode-id%3D6%253A0%26scaling%3Dscale-down" allowfullscreen></iframe>
+
+</div>
 </section>
 
 
@@ -142,25 +145,12 @@
 <section id="contact">
 <div class="container">
   <h1 style="color:#ef5d45; padding-top:80px; margin-top: -60px;text-align:center; ">The team</h1>
-  <div class="row">
+  <div class="row" >
 
 
-    <div class="col-md-4">
-
+<div class="col-md-6">
       <div class="card">
-        <img src="images/wasim.jpeg" alt="Wasim" align="middle" style="width:70%; margin: auto">
-        <div class="container">
-          <h2 style="text-align: center">Wasim Ahmed</h2>
-          <p class="title">PhD - Information Science</p>
-          <p>Social Media expert with over 20-peer-reviewed research publications. Lecturer in Digital Business with a specialism in social media analytics.</p>
-          <p style="text-align:center"><a class="btn btn-info" href="https://www.linkedin.com/in/was3210/" role="button" target="_blank">LinkedIn</a></p>
-        </div>
-      </div>
-    </div>
-
-<div class="col-md-4">
-      <div class="card">
-        <img src="images/marc.png" alt="Marc" style="width:70%; margin: auto">
+        <img src="images/marc.png" alt="Marc" style="width:50%; margin: auto">
         <div class="container">
           <h2 style="text-align: center">Marc Bonne</h2>
           <p class="title">PhD - Information Science</p>
@@ -170,9 +160,9 @@
       </div>
 </div>
 
-<div class="col-md-4">
+<div class="col-md-6">
           <div class="card">
-            <img src="images/iana.png" alt="Iana" style="width:70%; margin: auto">
+            <img src="images/iana.png" alt="Iana" style="width:50%; margin: auto">
             <div class="container">
               <h2 style="text-align: center">Iana Gein</h2>
               <p class="title">MSc in Data Science</p>
@@ -185,81 +175,9 @@
 </div>
 
 
-<!-- Contact form -->
-  <h1 style="color:#ef5d45; padding-top:20px; text-align:center;">Send us a message</h1>
 
-
-<div class="container">
-  <div class="row">
-        <!--Grid column-->
-        <div class="col-sm">
-            <form id="contact-form" name="contact-form" action="mail.php" method="POST">
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <label for="name" class="">Your name</label>
-                            <input type="text" id="name" name="name" class="form-control">
-                        </div>
-                    </div>
-                    <!--Grid column-->
-
-                    <!--Grid column-->
-                    <div class="col-md-6">
-                        <div class="md-form mb-0">
-                            <label for="email" class="">Your email</label>
-                            <input type="text" id="email" name="email" class="form-control">
-                        </div>
-                    </div>
-                    <!--Grid column-->
-
-                </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
-                <div class="row">
-                    <div class="col-md-12">
-                        <div class="md-form mb-0">
-                          <label for="subject" class="">Subject</label>
-                            <input type="text" id="subject" name="subject" class="form-control">
-                        </div>
-                    </div>
-                </div>
-                <!--Grid row-->
-
-                <!--Grid row-->
-                <div class="row">
-
-                    <!--Grid column-->
-                    <div class="col-md-12">
-
-                        <div class="md-form">
-                            <label for="message">Your message</label>
-                            <textarea type="text" id="message" name="message" rows="2" class="form-control md-textarea"></textarea>
-                        </div>
-
-                    </div>
-                </div>
-                <!--Grid row-->
-
-            </form>
-
-            <div class="text-center text-md-left" style="padding-top:10px">
-                <a class="btn btn-warning btn-lg" onclick="document.getElementById('contact-form').submit();">Send</a>
-            </div>
-            <div class="status"></div>
-        </div>
-        <!--Grid column-->
-    </div>
-</div>
-
-
-<!-- Contact form -->
 <div class="container-fluid text-center">
-<h1 style="color:#ef5d45; padding-top:20px; text-align:center;">Follow Codercats on social media</h1>
+<h1 style="color:#ef5d45; padding-top:40px; text-align:center;">Follow Codercats on social media</h1>
 <p style="padding-bottom:30px;" ><a class="btn btn-info" href="https://www.linkedin.com/groups/8858493/" role="button" target="_blank">LinkedIn</a></p>
 </div>
 
@@ -296,72 +214,9 @@
 
       gtag('config', 'UA-155675234-1');
     </script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
 
 
-<!-- for contact form https://mdbootstrap.com/docs/jquery/forms/contact/ -->
-<script>
-function validateForm() {
-var name =  document.getElementById('name').value;
-if (name == "") {
-    document.getElementById('status').innerHTML = "Name cannot be empty";
-    return false;
-}
-var email =  document.getElementById('email').value;
-if (email == "") {
-    document.getElementById('status').innerHTML = "Email cannot be empty";
-    return false;
-} else {
-    var re = /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    if(!re.test(email)){
-        document.getElementById('status').innerHTML = "Email format invalid";
-        return false;
-    }
-}
-var subject =  document.getElementById('subject').value;
-if (subject == "") {
-    document.getElementById('status').innerHTML = "Subject cannot be empty";
-    return false;
-}
-var message =  document.getElementById('message').value;
-if (message == "") {
-    document.getElementById('status').innerHTML = "Message cannot be empty";
-    return false;
-}
-document.getElementById('status').innerHTML = "Sending...";
-document.getElementById('contact-form').submit();
-
-}
-</script>
-
-<script>
-document.getElementById('status').innerHTML = "Sending...";
-formData = {
-'name'     : $('input[name=name]').val(),
-'email'    : $('input[name=email]').val(),
-'subject'  : $('input[name=subject]').val(),
-'message'  : $('textarea[name=message]').val()
-};
-
-
-$.ajax({
-url : "mail.php",
-type: "POST",
-data : formData,
-success: function(data, textStatus, jqXHR)
-{
-
-$('#status').text(data.message);
-if (data.code) //If mail was sent successfully, reset the form.
-$('#contact-form').closest('form').find("input[type=text], textarea").val("");
-},
-error: function (jqXHR, textStatus, errorThrown)
-{
-$('#status').text(jqXHR);
-}
-});
-</script>
-
-<!-- for contact form -->
 
 </body>
 </html>
